@@ -9,7 +9,7 @@ var searchInsert = function(nums, target) {
     else {
         nums.push(target)
         const sortedArray = nums.sort((a,b) => a - b)
-        return binarySearch(sortedArray , target , 0 , nums.length - 1)
+        return nums.indexOf(target)
     }
 };
 
