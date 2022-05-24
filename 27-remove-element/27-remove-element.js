@@ -4,7 +4,7 @@
  * @return {number}
  */
 var removeElement = function(nums, val) {
-    for(let i = 0; i < nums.length;){
+    for(let i = nums.indexOf(val); i < nums.length;){
         if(nums[i] === val) nums.splice(i,1)
         else i++
     }
